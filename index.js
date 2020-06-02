@@ -62,7 +62,7 @@ const init = async () => {
             path: '/t4/reflectHTMLencoded',
             handler: (request, h) => {
                 const query = request.query || {}                
-                return h.view("reflectOnResponse", {data:query.data})
+                return h.view("reflectOnResponseHTMLEncoded", {data:query.data})
             }
         },
         // /t5/reflectB64decoded?data=cXVlcnlQYXJhUmVmbGVjdE9uUmVzcG9uc2VCNjRlbmNvZGVk
